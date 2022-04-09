@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card {
+            box-shadow: 15px 10px 15px #0000001f;
+            border-radius: 15px;
+            padding: 25px;
+            height: auto;
+            width: 250px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        #tipoAtivo p {
+            font-size: 16px;
+            text-transform: lowercase;
+            margin: 0;
+        }
+
+        #nome {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        #valor {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #valorizacao {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .hr {
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin: 15px 0;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-<form action="">
-    <div class="selection">
-        <label for="cars">Escolha uma moeda</label>
-        <select id="coinForm" form="coinForm">
-            <option value="escolha">Escolha uma moeda</option>
-            <option value="BTC">Bitcoin</option>
-            <option value="ETH">Ethereum</option>
-            <option value="BCH">Bitcoin Cash</option>
-            <option value="DOGE">Doge Coin</option>
-            <option value="SOL">So lana</option>
+        <form action="">
+            <div class="selection">
+                <label for="cars">Escolha uma moeda</label>
+                <select id="coinForm" form="coinForm">
+                    <option value="escolha">Escolha uma moeda</option>
+                    <option value="BTC-BRL">Bitcoin</option>
+                    <option value="ETH-BRL">Ethereum</option>
+                    <option value="BCH-BRL">Bitcoin Cash</option>
+                    <option value="DOGE-BRL">Doge Coin</option>
+                    <option value="SOL-BRL">So lana</option>
+                </select>
+            </div>
+        </form>
+        <div class="card">
+            <div id="tipoAtivo"></div>
+            <div id="nome"></div>
+            <div class="hr"></div>
+            <div id="valor"></div>
+            <div id="valorizacao"></div>
+        </div>
 
-        </select>
-    </div>
-</form>
-    </div>
+        <script type="module" src="main.js"></script>
+</body>
 
-    <script type="module" src="main.js"></script></body>
 </html>
